@@ -43,9 +43,16 @@ section img{
 
 .group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   margin: 5px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  margin: 10px;
 }
 
 .group-about{
@@ -117,9 +124,6 @@ form input {
   margin-bottom: 20px;
   width: 180px;
 }
-div input{
-  align-self: flex-end;
-}
 
 form button {
   background-color: #ff385c;
@@ -152,7 +156,9 @@ footer p {
   }
 
   .group {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin: 5px;
   }
 
@@ -162,9 +168,12 @@ footer p {
 
   .group-media{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+    flex-flow: row wrap;
   }
+
 
   .item {
     flex: 1;
@@ -173,5 +182,6 @@ footer p {
   
   .item-double {
     flex: 2;
+    margin: 10px;
   }
 }
