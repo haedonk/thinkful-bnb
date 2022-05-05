@@ -172,6 +172,7 @@ footer p {
 
   form div{
     flex: 1;
+    justify-content: none;
     margin: 10px;
     width: 100%;
     justify-content: none;
