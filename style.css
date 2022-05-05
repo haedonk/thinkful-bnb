@@ -32,7 +32,6 @@ section.alternate-background {
 
 main img {
   width: 100%;
-  padding-bottom: 20px;
 }
 
 /* ---  Groups & Items --- */
@@ -101,7 +100,7 @@ form {
 
 form div{
   display: flex;
-  justify-content: space-between;
+  justify-content: c;
   margin: 11px;
 }
 
@@ -173,7 +172,6 @@ footer p {
 
   form div{
     flex: 1;
-    justify-content: none;
     margin: 10px;
     width: 100%;
     justify-content: none;
@@ -192,7 +190,7 @@ footer p {
 
   .about-split-p{
     flex: 2;
-    padding: 45px 10px 10px 10px;
+    align-self: center;
     font-weight: normal;
   }
   
