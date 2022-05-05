@@ -100,7 +100,7 @@ form {
 
 form div{
   display: flex;
-  justify-content: c;
+  justify-content: space-between;
   margin: 11px;
 }
 
