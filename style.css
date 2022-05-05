@@ -106,7 +106,12 @@ form {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+}
+
+form div{
+  display: flex;
+  justify-content: space-between;
+  margin: 11px;
 }
 
 form label {
@@ -116,14 +121,14 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 150px;
+  width: 180px;
 }
 
 form button {
   background-color: #ff385c;
   border: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 24px;
   padding: 15px;
   width: 100%;
 }
