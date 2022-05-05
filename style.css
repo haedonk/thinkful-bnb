@@ -13,7 +13,7 @@ h2 {
 
 h3 {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 p {
@@ -31,8 +31,12 @@ section.alternate-background {
 }
 
 main img {
+  width: 100px;
+}
+
+section img{
   width: 100%;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /* ---  Groups & Items --- */
@@ -40,15 +44,21 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  margin: 5px;
 }
 
 .item {
+  display: flex;
+  justify-content: space-between;
   flex: 1;
   margin: 10px;
 }
 
-.item-double {
-  flex: 2;
+.group-about{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* -------  Navigation ------- */
@@ -61,7 +71,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 45px;
   color: #fff;
 }
 
@@ -86,6 +96,7 @@ header nav ul li a:hover {
 
 header div{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -95,12 +106,7 @@ form {
   padding: 10px;
   display: flex;
   flex-direction: column;
-}
-
-form div{
-  display: flex;
-  justify-content: space-between;
-  margin: 11px;
+  justify-content: space-evenly;
 }
 
 form label {
@@ -110,22 +116,16 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 150px;
 }
 
 form button {
   background-color: #ff385c;
   border: none;
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   padding: 15px;
   width: 100%;
-}
-
-/* -------  Host ------- */
-
-section ul{
-  padding-left: 40px;
 }
 
 /* -------  Footer ------- */
@@ -146,62 +146,30 @@ footer p {
   header {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 10px 30px 0;
   }
 
-  ul{
-    padding-top: 8px;
+  img{
+    width: 100%;
   }
 
-  form{
-    flex-direction: row;
-    width: 98%;
-  }
-
-  form input, form select{
-    margin-bottom: 0;
-  }
-
-  form label{
-    padding-right: 5px;
-  }
-
-  form div{
-    margin: 0;
-    flex-direction: column;
-    padding: 0 40px 0 0;
-  }
-  
-  .about{
+  .group {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
   }
 
-  .about-split{
-    flex-direction: row;
+
+  .item {
     flex: 1;
-    padding: 10px;
+    margin: 10px;
+    width: 100%;
   }
-
-  .about-split-p{
+  
+  .item-double {
     flex: 2;
-    padding: 45px 10px 10px 10px;
-    font-weight: normal;
+    margin: 10px;
   }
-  
-  .about-p{
-    font-size: 15px;
-  }
-
-  .ideas-img{
-    flex: 1;
-    flex-direction: column;
-    padding: 5px;
-    font-size: 15px;
-  }
-
-  .host-text{
-    padding-top: 50px;
-  }
-  
 }
