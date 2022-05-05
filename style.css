@@ -13,7 +13,7 @@ h2 {
 
 h3 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 p {
@@ -31,12 +31,8 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
-}
-
-section img{
   width: 100%;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 /* ---  Groups & Items --- */
@@ -44,21 +40,15 @@ section img{
 .group {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 5px;
 }
 
 .item {
-  display: flex;
-  justify-content: space-between;
   flex: 1;
   margin: 10px;
 }
 
-.group-about{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.item-double {
+  flex: 2;
 }
 
 /* -------  Navigation ------- */
@@ -102,6 +92,7 @@ header div{
 
 /* -------  Search Form ------- */
 form {
+  font-size: 20px;
   border: 2px solid #ff385c;
   padding: 10px;
   display: flex;
@@ -121,7 +112,7 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 160px;
 }
 
 form button {
@@ -131,6 +122,12 @@ form button {
   font-size: 24px;
   padding: 15px;
   width: 100%;
+}
+
+/* -------  Host ------- */
+
+section ul{
+  padding-left: 40px;
 }
 
 /* -------  Footer ------- */
@@ -154,11 +151,11 @@ footer p {
     padding: 10px 30px 0;
   }
 
-  img{
-    width: 100%;
+  ul{
+    padding-top: 8px;
   }
 
-  .group {
+  form{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -166,15 +163,51 @@ footer p {
     margin: 5px;
   }
 
+  form input, form select{
+    margin-bottom: 0;
+  }
 
-  .item {
+  form label{
+    padding-right: 5px;
+  }
+
+  form div{
     flex: 1;
     margin: 10px;
     width: 100%;
+    justify-content: none;
   }
   
-  .item-double {
-    flex: 2;
-    margin: 10px;
+  .about{
+    display: flex;
+    flex-direction: row;
   }
+
+  .about-split{
+    flex-direction: row;
+    flex: 1;
+    padding: 10px;
+  }
+
+  .about-split-p{
+    flex: 2;
+    padding: 45px 10px 10px 10px;
+    font-weight: normal;
+  }
+  
+  .about-p{
+    font-size: 15px;
+  }
+
+  .ideas-img{
+    flex: 1;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .host-text{
+    padding-top: 50px;
+  }
+  
 }
